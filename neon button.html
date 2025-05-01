@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Button</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #0d0d0d;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .neon-button {
+      padding: 15px 40px;
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      background: transparent;
+      border: 2px solid #00ffcc;
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      text-decoration: none;
+      transition: 0.3s ease;
+      letter-spacing: 2px;
+    }
+
+    .neon-button:hover {
+      background-color: #00ffcc;
+      color: #0d0d0d;
+      box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
+    }
+
+    .neon-button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, #00ffcc, #ff00ff, #00ffff);
+      filter: blur(4px);
+      opacity: 0.6;
+      z-index: -1;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="neon-button">Gopal Singh</a>
+</body>
+</html>
